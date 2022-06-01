@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    
+</head>
+<body >
+    <header id='header'>
+        <div id="headerlogo"><img src="all_images\logomain.jpg" id="logo"></div>
+        <div id="heading">Blood Care</div>
+    </header>
+
+                          <!-- navigation bar -->
+
+                          <nav id='navbar'>
+                            <ul id="navul">
+                                <a href="home.html"><li class="navcontent">Home</li></a>
+                                <a href="Find blood bank.html"><li class="navcontent">Find Blood Bank</li></a>
+                                <a href="contact us.html"><li class="navcontent">Contact US</li></a>
+                                <a href="Admin_login.html"><li class="navcontent">Admin Login</li></a>
+                            </ul>
+                        </nav>
+    <div id='form'>
+        <form>
+            <p class="form1h">Login</p>
+    <table  >
+        
+           
+            <tr>
+                <th><label for="fname">Username</label></td>
+                
+            </tr>
+            <tr>
+                <td><input type="text" id="Uname" required placeholder="Enter Username.." ></td>
+               
+            </tr>
+            <tr>
+                <th><label for="Password">Password</label></th>
+                
+            </tr>
+            <tr>
+                <td><input type="password" id="password"></td>
+                
+            </tr>
+        </table>  
+          
+     </table><br>
+    
+
+      <input type="submit" value="SUBMIT" id="submit" class='submit'>
+
+    
+
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        var i=-1;
+        var Username=["Chirag","Aneesh","Rahul"]
+        var password=["123456789","1234567890","12345678901"]
+        
+        $("#submit").click(function(){
+        i++
+            if($("#Uname").val()==Username[i] && $("#password").val()==password[i]){
+                alert("login successful")
+            }
+            else{
+                alert("Wrong details")
+            }
+        })
+
+    
+        </script>
+
+
+
+</body>
+</html>

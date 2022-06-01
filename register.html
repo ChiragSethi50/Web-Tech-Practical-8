@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    
+</head>
+<body >
+    <header id='header'>
+        <div id="headerlogo"><img src="all_images\logomain.jpg" id="logo"></div>
+        <div id="heading">Blood Care</div>
+    </header>
+
+                          <!-- navigation bar -->
+
+                          <nav id='navbar'>
+                            <ul id="navul">
+                                <a href="home.html"><li class="navcontent">Home</li></a>
+                                <a href="Find blood bank.html"><li class="navcontent">Find Blood Bank</li></a>
+                                <a href="contact us.html"><li class="navcontent">Contact US</li></a>
+                                <a href="Admin_login.html"><li class="navcontent">Admin Login</li></a>
+                            </ul>
+                        </nav>
+    <div id='form'>
+        <form>
+            <p class="form1h">Login Information</p>
+    <table  >
+        
+           
+            <tr>
+                <th><label for="fname">First Name</label></td>
+                <th><label for="lname">Last Name</label></td>
+                <th><label for="email">Email Id</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="fname" required placeholder="Enter first name.." ></td>
+                <td><input type="text" id="lname" required placeholder="Enter last name..."></td>
+                <td><input type="email" id="email" required placeholder="abc@gmail.com"></td>
+            </tr>
+            <tr>
+                <th><label for="contact no">Contact No</label></th>
+                <th><label for="createpass">Create Password</label></th>
+                <th><label for="verifypass">Verify Password</label></th>
+            </tr>
+            <tr>
+                <td><input type="number" id="contact no" required placeholder="xxx--xxx--xxxx" minlength="10" maxlength="10"></td>
+                <td><input type="text" id="createpass" required placeholder="min length 10 digits"></td>
+                <td><input type="email" id="verifypass" required placeholder="enter again"></td>
+            </tr>
+        </table>
+        
+      <p class="form1h">Donor Information</p>
+      <table >
+          <tr>
+          <th colspan="2"><label for="bloodgroup">Blood Group</label></th>
+          <th colspan="2"><label for="Gender">Gender</label></th>
+          </tr>
+          <tr>
+              <td colspan="2"><select id="bloodgroup" required>
+                  <option selected>Dont Know</option>
+                  <option>A-</option>
+                  <option>A+</option>
+                  <option>B-</option>
+                  <option>B+</option>
+                  <option>AB-</option>
+                  <option>AB+</option>
+                  <option>O-</option>
+                  <option>O+</option>
+                  </select>
+              </td>
+              <td colspan="2">
+                  <select id="Gender">
+                      <option selected>Choose Gender</option>
+                      <option>Male</option>
+                      <option>Female</option>
+                      <option>Others</option>
+                  </select>
+              </td>
+          </tr>
+          <tr>
+              <th><label for="dob">Birth Date</label></th>
+              <th><label for="age">Age</label></th>
+              <th><label for="height">Height</label></th>
+              <th><label for="weight">Weight</label></th>
+          </tr>
+          <tr>
+              <td>
+                 <input type="date" id="dob" required>
+              </td>
+              <td>
+                <input type="number" id="age" required placeholder="age in number">
+             </td>
+             <td>
+                <input type="number" id="height" required placeholder="height in inches">
+             </td>
+             <td>
+                <input type="number" id="weight" required placeholder="weight in kg's">
+             </td>
+          </tr>
+      </table>
+      <p class="form1h">Contact Information</p>
+      <table>
+          <tr>
+              <th><label for="state">State</label></th>
+              <th><label for="district">District</label></th>
+              <th><label for="pincode">Pin/Zip Code</label></th>
+          </tr>
+          <tr>
+              <td>
+                <select id="state" required>
+                    <option selected>Select State</option>
+                    <optgroup label="States">
+                    <option>Andhra Pradesh</option>
+                    <option>Arunachal Pradesh</option>
+                    <option>Assam</option>
+                    <option>Bihar</option>
+                    <option>Chattisgarh</option>
+                    <option>Goa</option>
+                    <option>Gujrat</option>
+                    <option>Haryana</option>
+                    <option>Himachal Pradesh</option>
+                    <option>Jharkhand</option>
+                    <option>Karnataka</option>
+                    <option>Kerela</option>
+                    <option>Madhya pradesh</option>
+                    <option>Maharashta</option>
+                    <option>Manipur</option>
+                    <option>Meghalaya</option>
+                    <option>Mizoram</option>
+                    <option>Nagaland</option>
+                    <option>Odisha</option>
+                    <option>Punjab</option>
+                    <option>Rajasthan</option>
+                    <option>Sikkim</option>
+                    <option>Tamilnadu</option>
+                    <option>Telengana</option>
+                    <option>Tripura</option>
+                    <option>Uttar Pradesh</option>
+                    <option>Uttarakhand</option>
+                    <option>West Bengal</option>
+                    </optgroup>
+                    <optgroup label="Union Territories">
+                        <option>Andaman and Nicobar Islands</option>
+                        <option>Chanigarh</option>
+                        <option>Daman and Diu</option>
+                        <option>Delhi</option>
+                        <option>Jammu & Kashmir</option>
+                        <option>Ladakh</option>
+                        <option>Lakswadeep</option>
+                        <option>Puducherry</option>
+                    </optgroup>
+                </select>
+              </td>
+              <td>
+                  <input type="text" id="district" required placeholder="enter district...">
+              </td>
+              <td>
+                  <input type="number" required placeholder="enter pin / zip code">
+              </td>
+          </tr>
+          <tr>
+              <th colspan="3">
+                  <label for="houseadd">House Address</label>
+              </th>
+          </tr>
+          <tr>
+              <td colspan="3">
+                  <textarea rows="4" cols="100" placeholder="Enter full address..."></textarea>
+              </td>
+          </tr>
+          
+                 
+          
+     </table>
+     <input type="checkbox" style=" height: 14px;" required>
+              
+     <label><span id="icheckbox">I Accept</span>
+        <a  href="" id="acheckbox" title="Only for Display Purpose">Terms & Conditon</a>
+    </label><br><br>
+
+      <input type="submit" value="SUBMIT" id="submit" class='submit'>
+
+    
+</form>
+    </div>
+   
+    
+    <script src="home.js"></script>
+
+
+
+</body>
+</html>
